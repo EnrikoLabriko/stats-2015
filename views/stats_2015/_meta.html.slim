@@ -1,0 +1,40 @@
+ruby:
+  if I18n.locale.to_s == 'ru'
+      @lang = 'ru'
+  elsif I18n.locale.to_s == 'es'
+      @lang = 'es'
+  elsif I18n.locale.to_s == 'id'
+      @lang = 'id'
+  else
+      @lang = 'en'
+  end
+
+- content_for :og_meta do
+
+  - title = t('stats_2015.meta.title')
+  - description = t('stats_2015.meta.description')
+
+  / Facebook
+  meta property="fb:app_id" content="124791507543584"
+  meta property="og:type"   content="website"
+  meta property="og:url"    content="#{request.original_url}"
+  meta property="og:title"  content=title
+  meta property="og:image"  content='#{@og_image || image_path("library/2015/social/sharing-#{@lang}.png")}'
+  meta property="og:description" content=description
+
+  / Twitter
+  meta name="twitter:site" content="@bookmate_ru"
+  meta name="twitter:card" content="summary_large_image"
+  meta name="twitter:title" content=title
+  meta name="twitter:description" content=description
+  meta name="twitter:image:src" content='#{@og_image || image_path("library/2015/social/sharing-#{@lang}.png")}'
+
+  / VK
+  / Uses title and description from head
+  link rel="image_src" href='#{@og_image || image_path("library/2015/social/sharing-vk-#{@lang}.png")}'
+
+  / G+
+  meta itemscope=true itemtype="http://schema.org/Product"
+  meta itemprop="headline" content=title
+  meta itemprop="description" content=description
+  meta itemprop="image" content='#{@og_image || image_path("library/2015/social/sharing-#{@lang}.png")}'

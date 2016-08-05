@@ -1,0 +1,7 @@
+article.stats-2015__section--most-interesting
+  h1.stats-2015__section__header--most-interesting = t('stats_2015.most_interesting.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @most_interesting, discovery_id: 'most_interesting'
+
+  .clearfix

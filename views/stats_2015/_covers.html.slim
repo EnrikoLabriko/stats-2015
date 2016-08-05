@@ -1,0 +1,111 @@
+article.stats-2015__section--covers.stats-2015__section--best-covers
+  h1.stats-2015__section__header--covers.stats-2015__section__header--best-covers = t('stats_2015.best_covers.title')
+
+  section.stats-2015__section--covers__slider
+    .bm-page-about-content-reviews role="2015-covers-slider"
+      .bm-button-black.m-transparent.bm-page-about-content-reviews-arrow.m-left role="bm-review-slider-arrow-left"
+      .bm-button-black.m-transparent.bm-page-about-content-reviews-arrow.m-right role="bm-review-slider-arrow-right"
+
+      - if I18n.locale.to_s == "ru"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/whkpU8zc"
+                = image_tag "library/2015/covers/ru/cover-1.jpg"
+              a.cover-link href="https://bookmate.com/books/v4PhgxOJ"
+                = image_tag "library/2015/covers/ru/cover-2.jpg"
+              a.cover-link href="https://bookmate.com/books/GiXbLv3p"
+                = image_tag "library/2015/covers/ru/cover-3.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/qZFnTWc1"
+                = image_tag "library/2015/covers/ru/cover-4.jpg"
+              a.cover-link href="https://bookmate.com/books/tD76SNi5"
+                = image_tag "library/2015/covers/ru/cover-5.jpg"
+              a.cover-link href="https://bookmate.com/books/CaaFtwDh"
+                = image_tag "library/2015/covers/ru/cover-6.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/bTZftZ53"
+                = image_tag "library/2015/covers/ru/cover-7.jpg"
+              a.cover-link href="https://bookmate.com/books/JKmtpQMu"
+                = image_tag "library/2015/covers/ru/cover-8.jpg"
+              a.cover-link href="https://bookmate.com/books/lepHKGUq"
+                = image_tag "library/2015/covers/ru/cover-9.jpg"
+      - elsif I18n.locale.to_s == "es"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/xHrjFRjZ"
+                = image_tag "library/2015/covers/es/cover-1.jpg"
+              a.cover-link href="https://bookmate.com/books/G45APaQb"
+                = image_tag "library/2015/covers/es/cover-2.jpg"
+              a.cover-link href="https://bookmate.com/books/dohgeXSc"
+                = image_tag "library/2015/covers/es/cover-3.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/wjNgSx5D"
+                = image_tag "library/2015/covers/es/cover-4.jpg"
+              a.cover-link href="https://bookmate.com/books/lDGEguTq"
+                = image_tag "library/2015/covers/es/cover-5.jpg"
+              a.cover-link href="https://bookmate.com/books/Kiw1wRL0"
+                = image_tag "library/2015/covers/es/cover-6.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/OZenC40p"
+                = image_tag "library/2015/covers/es/cover-7.png"
+              a.cover-link href="https://bookmate.com/books/iLo02qus"
+                = image_tag "library/2015/covers/es/cover-8.jpg"
+              a.cover-link href="https://bookmate.com/books/Hk41XdFH"
+                = image_tag "library/2015/covers/es/cover-9.jpg"
+      - elsif I18n.locale.to_s == "id"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/xLfyeKjY"
+                = image_tag "library/2015/covers/id/cover-1.jpg"
+              a.cover-link href="https://bookmate.com/books/Pfhkm18A"
+                = image_tag "library/2015/covers/id/cover-2.jpg"
+              a.cover-link href="https://bookmate.com/books/dHcGgqE3"
+                = image_tag "library/2015/covers/id/cover-3.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/dbVT9Ljp"
+                = image_tag "library/2015/covers/id/cover-4.jpg"
+              a.cover-link href="https://bookmate.com/books/W05ZkIQk"
+                = image_tag "library/2015/covers/id/cover-5.jpg"
+              a.cover-link href="https://bookmate.com/books/MU4phdCu"
+                = image_tag "library/2015/covers/id/cover-6.jpg"
+      - else
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/daiAkFqG"
+                = image_tag "library/2015/covers/en/cover-1.jpg"
+              a.cover-link href="https://bookmate.com/books/Ch1bPnqm"
+                = image_tag "library/2015/covers/en/cover-2.jpg"
+              a.cover-link href="https://bookmate.com/books/GUL3jjco"
+                = image_tag "library/2015/covers/en/cover-3.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/JdLwXUl4"
+                = image_tag "library/2015/covers/en/cover-4.jpg"
+              a.cover-link href="https://bookmate.com/books/zPu6B94C"
+                = image_tag "library/2015/covers/en/cover-5.jpg"
+              a.cover-link href="https://bookmate.com/books/oPdzSV98"
+                = image_tag "library/2015/covers/en/cover-6.jpg"
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content
+            .bm-page-about-content-reviews-item-content-text
+              a.cover-link href="https://bookmate.com/books/TJiYn7WP"
+                = image_tag "library/2015/covers/en/cover-7.jpg"
+              a.cover-link href="https://bookmate.com/books/RFU3aLrq"
+                = image_tag "library/2015/covers/en/cover-8.jpg"
+              a.cover-link href="https://bookmate.com/books/xnpzxkZ8"
+                = image_tag "library/2015/covers/en/cover-9.jpg"

@@ -1,0 +1,6 @@
+article.stats-2015__section--bookshelves
+  h1.stats-2015__section__header--bookshelves = t('stats_2015.bookshelves.title')
+
+  section.stats-2015__section--bookshelves__container
+    .bm-bookshelves-index-list
+      = render partial: 'bookshelves/list/bookshelf_list_item', collection: @user_bookshelves, as: :bookshelf, show_owner: true

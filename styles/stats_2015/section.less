@@ -1,0 +1,1015 @@
+@import (reference) 'includes.less';
+
+.stats-2015__section {
+  padding: 0;
+  font-family: @font-museo;
+}
+
+.stats-2015__section__header {
+  margin-bottom: 60px !important;
+}
+
+.stats-2015__section__header {
+  color: @color-blue;
+  text-align: center;
+  padding-top: 105px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 70px;
+  font-size: 35px;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  &.simple {
+    color: @color-blue-grey;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.stats-2015__section__year {
+  font-size: 12px;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: @color-grey;
+  display: block;
+}
+
+// Most popular in english
+
+ .stats-2015__section--most-popular-en {
+   &:extend(.stats-2015__section);
+ }
+
+.stats-2015__section__header--most-popular-en {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2014/icons/most-interesting.svg');
+  background-size: 100px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+// Most Finished
+
+.stats-2015__section--most-finished {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--most-finished {
+  &:extend(.stats-2015__section__header);
+
+  padding-top: 100px;
+}
+
+// Most Unfinished
+
+.stats-2015__section--most-unfinished {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--most-unfinished {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2014/icons/most-unfinished.svg');
+  padding-top: 80px;
+  margin-top: 100px;
+}
+
+// Most Interesting
+
+.stats-2015__section--most-interesting {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--most-interesting {
+  &:extend(.stats-2015__section__header);
+  background-image: url('/pipeline/library/2014/icons/most-interesting.svg');
+  background-size: 100px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+// Most Impressed
+
+.stats-2015__section--most-impressed {
+  &:extend(.stats-2015__section);
+
+  .bookcard {
+    width: 199px;
+    border: none;
+    margin-left: -2px;
+    overflow: hidden;
+  }
+
+  .bookcard-label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .bookcard-layer {
+    width: 197px;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding-top: 55%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 26px;
+
+    .bookcard-layer-note {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  .bookcard-label {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 12px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+  }
+
+  .bookcard:nth-of-type(1) .bookcard-layer,
+  .bookcard:nth-of-type(1) .bookcard-label {
+    background-color: #FA5948;
+  }
+
+  .bookcard:nth-of-type(2) .bookcard-layer,
+  .bookcard:nth-of-type(2) .bookcard-label {
+    background-color: #FDA0D1;
+  }
+
+  .bookcard:nth-of-type(3) .bookcard-layer,
+  .bookcard:nth-of-type(3) .bookcard-label {
+    background-color: #C393EE;
+  }
+
+  .bookcard:nth-of-type(4) .bookcard-layer,
+  .bookcard:nth-of-type(4) .bookcard-label {
+    background-color: #81BAFF;
+  }
+
+  .bookcard:nth-of-type(5) .bookcard-layer,
+  .bookcard:nth-of-type(5) .bookcard-label {
+    background-color: #84D3C1;
+  }
+
+  .bookcard:nth-of-type(6) .bookcard-layer,
+  .bookcard:nth-of-type(6) .bookcard-label {
+    background-color: #76B75B;
+  }
+
+  .bookcard:nth-of-type(7) .bookcard-layer,
+  .bookcard:nth-of-type(7) .bookcard-label {
+    background-color: #A17C5A;
+  }
+
+  .bookcard:nth-of-type(8) .bookcard-layer,
+  .bookcard:nth-of-type(8) .bookcard-label {
+    background-color: #606060;
+  }
+
+  .bookcard:nth-of-type(9) .bookcard-layer,
+  .bookcard:nth-of-type(9) .bookcard-label {
+    background-color: #F6C82D;
+  }
+
+  .bookcard:nth-of-type(10) .bookcard-layer,
+  .bookcard:nth-of-type(10) .bookcard-label {
+    background-color: #A9A5A1;
+  }
+
+}
+
+.stats-2015__section__header--most-impressed {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2015/smiles.svg');
+  background-size: 100px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+// Most Cited
+
+.stats-2015__section--most-cited {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--most-cited {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2014/icons/most-cited.svg');
+  background-size: 90px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+// Most Cited
+
+.stats-2015__section--local-books {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--local-books {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 90px;
+  padding-top: 100px;
+}
+
+// Most Furtively
+
+.stats-2015__section--most-furtively {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--most-furtively {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2014/icons/lists.svg');
+  background-size: 110px;
+  padding-top: 60px;
+  margin-top: 100px;
+}
+
+// Records
+
+.stats-2015__section--records {
+  &:extend(.stats-2015__section);
+  text-align: center;
+
+  .stats-2015_record {
+    margin-bottom: 1px;
+    width: 197px;
+    height: 260px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #dfe6f0;
+    margin-left: -1px;
+    margin-top: -2px;
+    padding: 35px 0;
+
+    .stats-2015_userpic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .stats-2015_record-text {
+      span {
+        display: inline-block;
+        font-weight: bold;
+      }
+
+      .record-name {
+        color: #555555;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      .record-count {
+        color: #4569F9;
+        font-size: 30px;
+        margin: 10px 0 -10px;
+      }
+
+      .record-note {
+        color: #4569F9;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.stats-2015__section__header--records {
+  &:extend(.stats-2015__section__header.simple);
+  color: #426bf2;
+  text-align: center;
+
+  background-image: url('/pipeline/library/2014/icons/our-choise.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  background-size: 110px;
+  padding-top: 110px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+// Most Inspirational
+
+.stats-2015__section--most-inspirational {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--most-inspirational {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 100px;
+  padding-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+// Best Books
+
+.stats-2015__section--best-books {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--best-books {
+  &:extend(.stats-2015__section__header.simple);
+  color: #426bf2;
+  text-align: center;
+
+  background-size: 100px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+// Best Covers
+
+.stats-2015__section--best-covers {
+  &:extend(.stats-2015__section);
+
+  .cover-link {
+    margin-right: 3%;
+  }
+
+  .cover-link:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.stats-2015__section__header--best-covers {
+  &:extend(.stats-2015__section__header);
+
+  color: #426bf2;
+  background-image: url('/pipeline/library/2014/icons/bookshelves.svg');
+  background-size: 100px;
+  padding-top: 100px;
+  margin-top: 60px;
+}
+
+// Fiction
+
+.stats-2015__section--fiction {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--fiction {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 100px;
+  padding-top: 60px;
+
+}
+
+// Non-Fiction
+
+.stats-2015__section--non-fiction {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--non-fiction {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 100px;
+  padding-top: 60px;
+
+}
+
+// Documentary
+
+.stats-2015__section--documentary {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--documentary {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 100px;
+  padding-top: 100px;
+
+}
+
+// Business
+
+.stats-2015__section--business {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--business {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 100px;
+  padding-top: 100px;
+
+}
+
+// Children's books
+
+.stats-2015__section--childrens-books {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--childrens-books {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 100px;
+  padding-top: 100px;
+
+}
+
+// Most Popular
+
+//.stats-2015__section--most-popular {
+//  &:extend(.stats-2015__section);
+//}
+//
+//.stats-2015__section__header--most-popular {
+//  &:extend(.stats-2015__section__header);
+//
+//  background-image: url('/pipeline/library/2015/icons/most-popular.svg');
+//
+//  background-size: 90px;
+//  padding-top: 110px;
+//}
+
+// Quotes
+
+.stats-2015__section--quotes {
+  &:extend(.stats-2015__section);
+
+  .bm-page-about-content-reviews-item-content {
+    position: relative;
+    padding-top: 30px !important;
+    padding-bottom: 120px !important;
+  }
+
+  .bm-quote-likes {
+    width: 720px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 0 0 0 30px;
+
+    border: 1px solid #DFE6F0;
+    border-top: none;
+    box-sizing: border-box;
+
+    text-align: left;
+
+    .bm-quote-likes-counter {
+      border-left: none;
+      color: #9A9A9A;
+    }
+
+    > div {
+      line-height: 60px;
+    }
+
+    .bm-quote-likes-control {
+      display: none;
+    }
+
+    .bm-quote-social {
+      width: 130px;
+    }
+
+    .bm-quote-likes-likers-wrapper {
+      width: 360px;
+    }
+
+    .bm-button-social-share {
+      color: #9A9A9A;
+      font-size: 13px;
+      width: auto;
+      border: none;
+      padding: 22px 10px 0 40px;
+      font-weight: normal;
+    }
+  }
+}
+
+.stats-2015__section__header--quotes {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2014/icons/quotes.svg');
+  background-size: 110px;
+  padding-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 20px !important;
+}
+
+.stats-2015__section--quotes__slider {
+
+  .bm-page-about-content-reviews {
+    border: none;
+    height: auto;
+    line-height: 100%;
+    margin-bottom: 0;
+
+    &:before, &:after {
+      display: none;
+    }
+
+  }
+
+  .bm-page-about-content-reviews-item {}
+
+  .bm-page-about-content-reviews-item-content {
+    min-height: 300px;
+    max-width: 720px;
+    box-sizing: border-box;
+    padding: 60px;
+    background-color: #f59275;
+    background-size: 100%;
+    background-size: cover;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .bm-page-about-content-reviews-item-content-text {
+    color: white;
+    font-size: 30px;
+    line-height: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0px;
+
+    &.long {
+      font-size: 23px;
+    }
+
+    &.short {
+      font-size: 40px;
+    }
+
+  }
+
+  .bm-page-about-content-reviews-item-content-author {
+    position: relative;
+    margin-top: 60px;
+    color: white;
+
+    &:before {
+      content: "";
+      display: block;
+      border-top: 2px solid white;
+      width: 200px;
+      left: 50%;
+      margin-left: -100px;
+      top: -30px;
+      position: absolute;
+    }
+  }
+
+}
+
+// Lists
+
+.stats-2015__section--lists {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--lists {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 110px;
+  padding-top: 80px;
+}
+
+.stats-2015__section--lists__container {
+
+}
+
+// Bookshelves
+
+.stats-2015__section--bookshelves {
+  &:extend(.stats-2015__section);
+}
+
+.stats-2015__section__header--bookshelves {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2015/trunk.svg');
+  background-size: 110px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.stats-2015__section--bookshelves__container {
+  .bm-bookshelves-index-list {
+    margin-top: 0;
+  }
+}
+
+// Our Choice
+
+.stats-2015__section--our-choice {
+  &:extend(.stats-2015__section);
+
+  position: relative;
+  text-align: center;
+  .stats-2015__header__curl {
+    top: -40px;
+
+    .stats-2015__header__curl-content:nth-of-type(1) path,
+    .stats-2015__header__curl-content:nth-of-type(2) path {
+      animation: stats-2015-dash 6s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+      animation-delay: 0.1s;
+    }
+
+    .stats-2015__header__curl-content:nth-of-type(3) path,
+    .stats-2015__header__curl-content:nth-of-type(4) path,
+    .stats-2015__header__curl-content:nth-of-type(5) path,
+    .stats-2015__header__curl-content:nth-of-type(6) path,
+    .stats-2015__header__curl-content:nth-of-type(7) path,
+    .stats-2015__header__curl-content:nth-of-type(8) path,
+    .stats-2015__header__curl-content:nth-of-type(9) path,
+    .stats-2015__header__curl-content:nth-of-type(10) path,
+    .stats-2015__header__curl-content:nth-of-type(11) path,
+    .stats-2015__header__curl-content:nth-of-type(12) path,
+    .stats-2015__header__curl-content:nth-of-type(13) path,
+    .stats-2015__header__curl-content:nth-of-type(14) path,
+    .stats-2015__header__curl-content:nth-of-type(15) path {
+      animation: stats-2015-dash 6s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+      animation-delay: 3s;
+    }
+  }
+}
+
+.stats-2015__section__header--our-choice {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 110px;
+  padding-top: 130px;
+
+  font-family: @font-museo;
+  color: @color-blue;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 80px;
+  margin-top: 60px;
+  margin-bottom: 20px !important;
+
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .stats-2015__section__header--our-choice {
+    font-size: 60px;
+  }
+}
+
+.stats-2015__section__year--our-choice {
+  &:extend(.stats-2015__section__year);
+  margin-bottom: 20px;
+}
+
+// Children's books
+
+.stats-2015__section--childrens-books {
+  &:extend(.stats-2015__section);
+  text-align: center;
+}
+
+.stats-2015__section__header--childrens-books {
+  &:extend(.stats-2015__section__header.simple);
+  color: #426bf2;
+}
+
+// TNP books
+
+.stats-2015__section--tnp-books {
+  &:extend(.stats-2015__section);
+  text-align: center;
+}
+
+.stats-2015__section__header--tnp-books {
+  &:extend(.stats-2015__section__header);
+
+  background-size: 110px;
+
+  a {
+    color: @color-blue;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Personal stats
+
+.stats-2015__section--personal {
+  &:extend(.stats-2015__section);
+  text-align: center;
+}
+
+.stats-2015__section__header--personal {
+  &:extend(.stats-2015__section__header);
+
+  background: url('/pipeline/library/2015/stats.svg') no-repeat 50% 0;
+  margin-top: 100px;
+  padding-top: 120px;
+  background-size: 110px;
+}
+
+.stats-2015__section--personal .viewport {
+  width: 100%;
+  //height: 630px;
+  margin: 0px auto 0 auto;
+  background-color: #ccc;
+  font-family: Museo;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+
+  .bm-button-social-share {
+    color: #fff;
+    font-size: 18px;
+    width: auto;
+    border: none;
+    padding: 14px 10px 0 30px;
+    font-weight: normal;
+
+    background-image: url('/pipeline/library/2015/share-icon.svg');
+    background-position: 0 0;
+
+    &:hover {
+      background-position: 0 0;
+      border: none;
+    }
+  }
+}
+
+.stats-2015__section--personal .hours {
+  padding-top: 30px;
+}
+
+.stats-2015__section--personal .hours div {
+  display: inline-block;
+}
+
+.stats-2015__section--personal .hours .count .text {
+  display: block;
+  position: relative;
+  top: 10px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.stats-2015__section--personal .hours .count .number {
+  position: relative;
+  top: 10px;
+  display: block;
+  font-size: 130px;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.stats-2015__section--personal .leaf-left {
+  position: relative;
+  width: 65px;
+  height: 158px;
+  background-image: url('/personal-stats-2015-img-generator/img/leaf-left.png');
+  background-size: 65%;
+  background-repeat: no-repeat;
+  top: 55px;
+  left: 10px;
+}
+
+.stats-2015__section--personal .leaf-right {
+  position: relative;
+  width: 65px;
+  height: 158px;
+  background-image: url('/personal-stats-2015-img-generator/img/leaf-right.png');
+  background-size: 65%;
+  background-repeat: no-repeat;
+  top: 55px;
+  left: 10px;
+}
+
+.stats-2015__section--personal .dense .leaf-left {
+  right: 10px;
+}
+
+.stats-2015__section--personal .dense .leaf-right {
+  left: 10px;
+}
+
+.text-block {
+  margin: 10px auto 0 auto;
+  width: 80%;
+  line-height: 32px;
+  font-size: 24px;
+
+  .bm-personal-social {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.stats-2015__section--personal .text-custom {
+  padding-bottom: 20px;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.stats-2015__section--personal .emoji-img {
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 25px;
+}
+
+
+// Covers
+
+.stats-2015__section--covers {
+  &:extend(.stats-2015__section);
+  text-align: center;
+}
+
+.stats-2015__section__header--covers {
+  &:extend(.stats-2015__section__header.simple);
+}
+
+.stats-2015__section--covers__slider {
+
+  .bm-page-about-content-reviews {
+    border: none;
+    height: auto;
+    line-height: 100%;
+  }
+
+  .bm-page-about-content-reviews-item {}
+
+  .bm-page-about-content-reviews-item-content {
+    // min-height: 300px;
+    max-width: 720px;
+    box-sizing: border-box;
+    // padding: 60px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .bm-page-about-content-reviews-item-content-text {
+    margin-bottom: 0px;
+    padding: 1px;
+    line-height: 100%;
+    overflow: hidden;
+
+    &:before, &:after {
+      display: none;
+    }
+
+    img {
+      height: 300px;
+      margin-right: 3%;
+      vertical-align: middle;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+.bm-stats-2015 {
+  .bm-quote-creator {
+    margin-bottom: 25px;
+
+    .bm-quote-creator-name {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+  .bm-stats-2015 {
+    .stats-2015__section--records {
+      margin: 0 auto;
+      width: 620px;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .bm-stats-2015 {
+    .bm-quote-likes-control {
+      display: none;
+    }
+
+    .bm-quote-likes-counter {
+      display: none;
+    }
+
+    .bm-quote-likes-likers {
+      display: none;
+    }
+
+    .bm-quote-social {
+      padding: 0;
+      width: 100vw !important;
+      text-align: center;
+    }
+
+    .bm-quote-likes {
+      padding: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .bm-stats-2015 {
+    .stats-2015__section--quotes {
+      .bm-page-about-content-reviews-arrow {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bm-stats-2015 {
+    .stats-2015__section--personal {
+      .leaf-left,
+      .leaf-right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .bm-stats-2015 {
+    .stats-2015__section--personal {
+
+      .hours .count .number {
+        font-size: 120px;
+        line-height: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bm-stats-2015 {
+    .leaf-left,
+    .leaf-right {
+      width: 55px;
+    }
+
+    .number {
+      font-size: 120px;
+    }
+
+    .stats-2015__section--quotes {
+      .bm-page-about-content-reviews-arrow {
+        margin-bottom: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .bm-stats-2015 {
+    .stats-2015__section--records {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .stats-2015__records {
+      width: 100%;
+    }
+
+    .stats-2015_record {
+      width: 100%;
+    }
+  }
+}

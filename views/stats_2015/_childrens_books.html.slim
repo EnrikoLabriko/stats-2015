@@ -1,0 +1,7 @@
+article.stats-2015__section--childrens-books
+  h1.stats-2015__section__header--childrens-books = t('stats_2015.childrens_books.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @childrens_books, discovery_id: 'childrens_books'
+
+  .clearfix

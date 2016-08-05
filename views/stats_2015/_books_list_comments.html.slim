@@ -1,0 +1,11 @@
+- books.each do |book|
+  .stats-2015__book__commented
+    .stats-2015__book__commented__cover role="bm-btn-ctx-holder" data-ctx="ny_2015"
+      = render 'books/book_cover',
+        book: book,
+        lazyload: true,
+        credits_on_hover: true,
+        read_button: { enabled: true }
+    .stats-2015__book__commented__comment
+      .stats-2015__book__commented__comment-wrapper
+        = book_comments(book.uuid)

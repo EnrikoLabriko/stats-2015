@@ -1,0 +1,7 @@
+article.stats-2015__section--non-fiction
+  h1.stats-2015__section__header--non-fiction = t('stats_2015.non_fiction.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @non_fiction, discovery_id: 'most_unfinished'
+
+  .clearfix

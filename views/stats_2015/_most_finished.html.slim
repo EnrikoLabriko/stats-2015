@@ -1,0 +1,7 @@
+article.stats-2015__section--most-finished
+  h1.stats-2015__section__header--most-finished Популярные книги
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @most_finished, discovery_id: 'most_finished'
+
+  .clearfix

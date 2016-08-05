@@ -1,0 +1,7 @@
+article.stats-2015__section--fiction
+  h1.stats-2015__section__header--fiction = t('stats_2015.fiction.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @fiction, discovery_id: 'fiction'
+
+  .clearfix

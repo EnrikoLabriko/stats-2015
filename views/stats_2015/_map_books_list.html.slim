@@ -1,0 +1,6 @@
+ruby:
+  mixpanel_ctx ||= 'other'
+
+- books.each do |book|
+  - document = book.document_to_show
+  .book-info data-id="#{book.uuid}" data-title="#{book.title}" data-author="#{book.authors}" data-cover="#{book.cover_url}"
