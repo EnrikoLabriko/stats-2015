@@ -1,0 +1,7 @@
+article.stats-2015__section--most-unfinished
+  h1.stats-2015__section__header--most-unfinished = t('stats_2015.most_unfinished.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @most_unfinished, discovery_id: 'most_unfinished'
+
+  .clearfix

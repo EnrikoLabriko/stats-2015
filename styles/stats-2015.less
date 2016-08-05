@@ -1,0 +1,20 @@
+@import 'stats_2015/header.less';
+@import 'stats_2015/section.less';
+@import 'stats_2015/books.less';
+@import 'stats_2015/footer.less';
+@import 'stats_2015/map.less';
+
+.bm-stats-2015 {
+
+  .bm-layout-page {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  &.visible {
+    .bm-layout-page {
+      opacity: 1;
+    }
+  }
+
+}

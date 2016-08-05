@@ -1,0 +1,14 @@
+ruby:
+  mixpanel_ctx ||= 'other'
+  discovery_id ||= nil
+
+- books.each do |book|
+  = render 'books/book_card',
+    book: book,
+    document: book.document_to_show(for: current_user).decorate,
+    lazyload: true,
+    credits_on_hover: true,
+    mixpanel_ctx: mixpanel_ctx,
+    discovered_id: discovery_id,
+    lazy_image: false,
+    read_button: { enabled: true }

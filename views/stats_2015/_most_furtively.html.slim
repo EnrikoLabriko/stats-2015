@@ -1,0 +1,7 @@
+article.stats-2015__section--most-furtively
+  h1.stats-2015__section__header--most-furtively == t('stats_2015.most_furtively.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @most_furtively, discovery_id: 'most_furtively'
+
+  .clearfix

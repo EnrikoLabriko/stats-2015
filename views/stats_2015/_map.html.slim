@@ -1,0 +1,16 @@
+script async="true" defer="true" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD95y0aap_Gu-aXdLo8j1FcrSWNI-dr_cA&callback=initMap"
+script
+  | var map;
+    function initMap() {
+      document.getElementsByClassName('stats-2015__section--map')[0].className += ' initiated'
+    }
+
+article.stats-2015__section--map
+  h1.stats-2015__section__header--map = t('stats_2015.map.title')
+
+  section.stats-2015__map#stats-2015__map
+
+  .clearfix
+
+  .map-books-container.hidden
+    = render "library/stats_2015/map_books_list", books: @map_books

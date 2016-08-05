@@ -1,0 +1,48 @@
+@import (reference) 'includes.less';
+
+.stats-2015__section--map {
+  &:extend(.stats-2015__section);
+
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats-2015__section__header--map {
+  &:extend(.stats-2015__section__header);
+
+  background-image: url('/pipeline/library/2014/icons/most-popular.svg');
+
+  background-size: 90px;
+  padding-top: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.stats-2015__map {
+  height: 500px;
+}
+
+.info-window {
+  width: 150px;
+
+  font-family: Museo, arial, sans-serif;
+
+  .info-cover {
+    display: block;
+    margin: 0 auto;
+    width: 98px;
+    height: 145px;
+  }
+
+  .info-title {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .info-author {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,136 @@
+@import (reference) 'includes.less';
+
+.stats-2015__header {
+  text-align: center;
+  font-family: @font-museo;
+  position: relative;
+  padding-bottom: 40px;
+  border-bottom: none;
+}
+
+.stats-2015__header__title {
+  color: @color-blue;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 80px;
+  margin-bottom: 15px;
+  margin-top: 130px;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .stats-2015__header__title {
+    margin-top: 50px;
+    font-size: 60px;
+  }
+}
+
+.stats-2015__header__subtitle {
+  font-weight: normal;
+  color: @color-grey;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.stats-2015__header__curl.animated {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  top: -120px;
+  left: 50%;
+  margin-left: -450px;
+  overflow: hidden;
+
+  .stats-2015__header__curl-content {
+    display: inline-block;
+    position: absolute;
+    top: -45px;
+    left: 0;
+
+    path {
+      stroke: #D9FF22;
+      stroke-width: 10px;
+      stroke-miterlimit: 10;
+      fill: transparent;
+      stroke-dasharray: 3200;
+      stroke-dashoffset: 3200;
+
+      .animated & {
+
+      }
+    }
+  }
+
+  .stats-2015__header__curl-content:nth-of-type(1) path,
+  .stats-2015__header__curl-content:nth-of-type(2) path {
+    animation: stats-2015-dash 6s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+    animation-delay: 0.1s;
+  }
+
+  .stats-2015__header__curl-content:nth-of-type(3) path,
+  .stats-2015__header__curl-content:nth-of-type(4) path,
+  .stats-2015__header__curl-content:nth-of-type(5) path,
+  .stats-2015__header__curl-content:nth-of-type(6) path,
+  .stats-2015__header__curl-content:nth-of-type(7) path,
+  .stats-2015__header__curl-content:nth-of-type(8) path,
+  .stats-2015__header__curl-content:nth-of-type(9) path,
+  .stats-2015__header__curl-content:nth-of-type(10) path,
+  .stats-2015__header__curl-content:nth-of-type(11) path,
+  .stats-2015__header__curl-content:nth-of-type(12) path,
+  .stats-2015__header__curl-content:nth-of-type(13) path,
+  .stats-2015__header__curl-content:nth-of-type(14) path,
+  .stats-2015__header__curl-content:nth-of-type(15) path {
+    animation: stats-2015-dash 6s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+    animation-delay: 3s;
+  }
+
+  .stats-2015__header__curl-content:nth-of-type(2) path,
+  .stats-2015__header__curl-content:nth-of-type(3) path,
+  .stats-2015__header__curl-content:nth-of-type(4) path,
+  .stats-2015__header__curl-content:nth-of-type(5) path,
+  .stats-2015__header__curl-content:nth-of-type(6) path,
+  .stats-2015__header__curl-content:nth-of-type(7) path,
+  .stats-2015__header__curl-content:nth-of-type(8) path {
+    stroke: #55E4E4;
+  }
+
+  .stats-2015__header__curl-content:nth-of-type(9) path,
+  .stats-2015__header__curl-content:nth-of-type(10) path,
+  .stats-2015__header__curl-content:nth-of-type(11) path,
+  .stats-2015__header__curl-content:nth-of-type(12) path {
+    stroke: #CC55E4;
+  }
+
+  .stats-2015__header__curl-content:nth-of-type(13) path,
+  .stats-2015__header__curl-content:nth-of-type(14) path,
+  .stats-2015__header__curl-content:nth-of-type(15) path {
+    stroke: #D9FF22;
+  }
+}
+
+.stats-2015__header__likes {
+  position: relative;
+  top: 40px;
+}
+
+@keyframes stats-2015-dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media screen and (max-width: @breakpoint-tablet) {
+}
+
+@media screen and (max-width: 900px) {
+  .stats-2015__header__curl {
+    display: none;
+  }
+}
+
+@media screen and (max-width: @breakpoint-mobile) {}
+

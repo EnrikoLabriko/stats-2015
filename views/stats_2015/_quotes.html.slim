@@ -1,0 +1,164 @@
+ruby:
+  if I18n.locale.to_s == 'ru'
+    reviews = [{
+        text: "Изолента работает вообще везде и&nbsp;повсюду. Изолента&nbsp;&mdash; это дар богов, ей&nbsp;нужно поклоняться.",
+        author: "Энди Вейер &laquo;Марсианин&raquo;",
+        class: "mars"
+      },{
+        text: "Он&nbsp;никогда не&nbsp;узнает, как я&nbsp;люблю его, и&nbsp;люблю не&nbsp;потому, что он&nbsp;хорош собой, а&nbsp;потому, что в&nbsp;нем больше меня, чем во&nbsp;мне самой.",
+        author: "Глория Митчелл &laquo;50 дней после моего самоубийства (СИ)&raquo;",
+        class: "50-days"
+      },{
+        text: "Когда-нибудь я&nbsp;поселюсь в&nbsp;теории, ибо в&nbsp;теории все всегда хорошо...",
+        author: "Марк Леви &laquo;Она & Он&raquo;",
+        class: "heshe"
+      },{
+        text: "Любовь пришла и&nbsp;ударила меня в&nbsp;лицо с&nbsp;такой силой, что я&nbsp;и&nbsp;по&nbsp;сей день страдаю головокружениями и&nbsp;размягчением мозга.",
+        author: "Стивен Фрай &laquo;Дури еще хватает&raquo;",
+        class: "fry"
+      },{
+        text: "Книги читают для того, чтобы сравнить свое существование с&nbsp;жизнью других и&nbsp;в&nbsp;конечном счете повзрослеть",
+        author: "Эмир Кустурица &laquo;Сто бед&raquo;",
+        class: "kusturica"
+      },{
+        text: "Безумие&nbsp;&mdash; делать одно и&nbsp;то&nbsp;же снова и&nbsp;снова, и&nbsp;ждать при этом разных результатов.",
+        author: "Боб Дорф, Стив Бланк &laquo;Стартап. Настольная книга основателя&raquo;",
+        class: "startup"
+      },{
+        text: "Лучшие умы моего поколения заняты тем, как заставить людей кликать мышью по&nbsp;рекламным объявлениям,&nbsp;&mdash; сказал мне Джефф Хаммербахер, ранее инженер Facebook. &mdash;&nbsp;Ужас...",
+        author: "Эшли Вэнс &laquo;Илон Маск. Tesla, SpaceX и дорога в будущее&raquo;",
+        class: "musk"
+      },{
+        text: "Ее&nbsp;бабка Адалия движением бровей поднимала разводной мост.",
+        author: "Анджей Сапковский &laquo;Ведьмак. Книга 1. Последнее желание&raquo;",
+        class: "witcher"
+      },{
+        text: "На&nbsp;сорок третьем году жизни Уильям Стоунер узнал&nbsp;то, что многим становится известно гораздо раньше: что человек, каким ты&nbsp;его полюбил, не&nbsp;равняется человеку, каким ты&nbsp;его будешь любить в&nbsp;итоге, что любовь&nbsp;&mdash; не&nbsp;цель, а&nbsp;процесс, посредством которого человек пытается познать человека.",
+        author: "Уильямс Джон &laquo;Стоунер&raquo;",
+        class: "stoner"
+      },{
+        text: "Для меня вопрос стоит более конкретно: где я&nbsp;хочу жить&nbsp;&mdash; в&nbsp;великой стране или в&nbsp;нормальной?",
+        author: "Светлана Алексиевич &laquo;Время секонд хэнд&raquo;",
+        class: "second-hand"
+      }]
+  elsif I18n.locale.to_s == 'id'
+      reviews = [{
+        text: "Indah itu enggak selalu akan berlaku untuk selamanya. Sama seperti sekarang, kesedihan yang kualami pasti suatu saat nanti akan berakhir.",
+        author: "Ngaku Gaul Kok Galau",
+        class: "mars"
+      },{
+        text: "Jika kita berpikir, “Ah, tidak apa-apa membuang sampah sembarangan, kan, hanya satu kertas tidak akan menimbulkan banjir ....” Ketika seluruh penduduk Jakarta berpikir seperti itu, sampah akan menumpuk dan menimbulkan sumbatan saluran air di mana-mana, sehingga banjir pun tidak bisa dihindarkan.",
+        author: "Makelar Rezeki",
+        class: "50-days"
+      },{
+        text: "PR-ku adalah merindukanmu. Lebih kuat dari Matematika. Lebih luas dari Fisika. Lebih kerasa dari Biologi.”",
+        author: "Dilan Bagian Kedua: Dia Adalah Dilanku Tahun 1991",
+        class: "heshe"
+      },{
+        text: "manusia bisa berada di tempat yang sama dalam waktu yang berbeda, tetapi tak bisa berada di tempat yang berbeda dalam waktu yang sama, semua itu karena pencipta manusia mau agar manusia setia",
+        author: "Ayah",
+        class: "fry"
+      },{
+        text: "Bila jisim Rahwana itu tak ada padamu, kau akan menyangka bahwa baik dan buruk sama saja? Tidak. Mereka berbeda. Keduanya hanya tak terpisah.",
+        author: "Rahvayana",
+        class: "kusturica"
+      },{
+        text: "Mungkin harus dengan cara yang kamu bilang dulu. Berputar menjadi sesuatu yang bukan kita, demi bisa menjadi diri kita lagi",
+        author: "Perahu Kertas",
+        class: "startup"
+      }]
+  else
+    reviews = [{
+        text: "Anyone can become angry —that is easy. But to be angry with the right person, to the right degree, at the right time, for the right purpose, and in the right way —this is not easy.",
+        author: "Emotional Intelligence",
+        class: "mars"
+      },{
+        text: "Remember that your perception of the world is a reflection of your state of consciousness. You are not separate from it, and there is no objective world out there. Every moment, your consciousness creates the world that you inhabit.",
+        author: "The Power of Now",
+        class: "50-days"
+      },{
+        text: "I blame hope for this. I went along with her for too long, even though I knew she was lying. Her tumbling twirling promises whispered that somehow everything was just going to work out—yes, in spite of the odds. She was so effortlessly confident that everything was going to be okay. Her relentless optimism wore me down and I bought into the lie of an eternal summer.",
+        author: "Me Without You",
+        class: "heshe"
+      },{
+        text: "Out beyond ideas <br> of wrongdoing and rightdoing, <br> there is a field. <br> I’ll meet you there. <br> —JELALUDDIN RUMI, 13th century",
+        author: "13th century And the Mountains Echoed",
+        class: "fry"
+      },{
+        text: "&laquo;You boys going to get somewhere, or just going?&raquo; We didn't understand his question, and it was a damned good question.",
+        author: "On The Road",
+        class: "kusturica"
+      },{
+        text: "The only thing new in this world is the history you don’t know.",
+        author: "Harry S. Truman &laquo;Red Riding Nineteen Seventy Four&raquo;",
+        class: "startup"
+      },{
+        text: "When you tell a lie, you steal someone’s right to the truth. When you cheat, you steal the right to fairness.",
+        author: "The Kite Runner",
+        class: "musk"
+      },{
+        text: "All you need is love. But a little chocolate now and then doesn’t hurt.",
+        author: "The 7 Secrets of Happiness",
+        class: "witcher"
+      },{
+        text: "If someone asks me now and is anything but absolutely sincere, I explain my lifestyle of mysterious means simply. &laquo;I’m a drug dealer.&raquo;",
+        author: "The 4-Hour Workweek, Escape the 9–5, Live Anywhere and Join the New Rich",
+        class: "stoner"
+      },{
+        text: "Two words that lead us to believe that Osama Bin Laden is already dead...Chuck Norris",
+        author: "Chuck Norris doesn't sleep. He waits.",
+        class: "second-hand"
+      }]
+  end
+
+  config   ||= {}
+  config.reverse_merge!(html: {})
+
+  if config.present?
+    creator_name      = config[:user].try(:[], :name) || config[:user].try(:[], :login)
+  end
+
+
+article.stats-2015__section--quotes
+  h1.stats-2015__section__header--quotes = t('stats_2015.quotes.title')
+
+  section.stats-2015__section--quotes__slider
+    .bm-page-about-content-reviews role="2015-quotes-slider"
+      .bm-button-black.m-transparent.bm-page-about-content-reviews-arrow.m-left role="bm-review-slider-arrow-left"
+      .bm-button-black.m-transparent.bm-page-about-content-reviews-arrow.m-right role="bm-review-slider-arrow-right"
+
+      - reviews.each do |review|
+        .bm-page-about-content-reviews-item role="bm-review-slider-slide"
+          .bm-page-about-content-reviews-item-content class=review[:class]
+            .bm-page-about-content-reviews-item-content-text [
+              class=(("long " if review[:text].length > 120).to_s + ("short " if review[:text].length < 60 ).to_s)
+              ]
+              == review[:text]
+            .bm-page-about-content-reviews-item-content-author == review[:author]
+
+            .bm-quote-likes role="bm-quote-block-likes"
+              .bm-quote-likes-control.m-like-heart-holder role="bm-quote-like-button"
+                .bm-like-heart role="bm-quote-like-heart" class="#{'m-liked' if config[:likers].present? && config[:likers][:liked] == true}"
+                .bm-quote-likes-control-text
+                  = t('like.me')
+
+              .bm-quote-likes-counter role="bm-quote-likes-count-wrapper"
+                .bm-quote-likes-counter-text
+                  = t('like.liked')
+                .bm-quote-likes-counter-count role="bm-quote-likes-count"
+                    = config[:likers][:count].to_s if config[:likers].present?
+
+              .bm-quote-likes-likers role="bm-quote-likes-likers"
+                .bm-quote-likes-likers-wrapper role="bm-quote-likes-likers-wrapper"
+                  /- if config[:likers].present? && config[:likers][:likers].present?
+                    - config[:likers][:likers].each do |liker|
+                      = render partial: 'shared/book/reader', locals: {user: liker}
+
+              .bm-quote-social
+                .bm-button-social-share role="bm-button-social-share"
+                    .bm-button-social-share-hidden-area hidden="hidden"
+                    .bm-button-social-share-dropdown-container role="bm-button-social-share-dropdown-container"
+                      .bm-dropdown-box
+                        .bm-dropdown-box-item.bm-button-social-share-dropdown-item.m-facebook role="bm-button-social-share-button-facebook" =="Facebook"
+                        .bm-dropdown-box-item.bm-button-social-share-dropdown-item.m-vkontakte role="bm-button-social-share-button-vkontakte" =="Vkontakte"
+                        .bm-dropdown-box-item.bm-button-social-share-dropdown-item.m-twitter role="bm-button-social-share-button-twitter" =="Twitter"

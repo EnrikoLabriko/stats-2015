@@ -1,0 +1,48 @@
+= render 'library/stats_2015/meta'
+
+= render 'library/stats_2015/header'
+
+= render 'library/stats_2015/map'
+- if I18n.locale.to_s == "ru"
+  = render 'library/stats_2015/most_interesting'
+  = render 'library/stats_2015/most_unfinished'
+- if I18n.locale.to_s == "en" || I18n.locale.to_s == "es" || I18n.locale.to_s == "id"
+  = render 'library/stats_2015/most_popular'
+= render 'library/stats_2015/most_impressed'
+= render 'library/stats_2015/most_cited'
+
+- if I18n.locale.to_s == "ru" || I18n.locale.to_s == "en" || I18n.locale.to_s == "id"
+  = render 'library/stats_2015/quotes'
+
+- if I18n.locale.to_s == "ru"
+  = render 'library/stats_2015/most_furtively'
+
+- if I18n.locale.to_s == "ru" || I18n.locale.to_s == "en"
+  = render 'library/stats_2015/personal'
+
+- if I18n.locale.to_s == "ru"
+  = render 'library/stats_2015/records'
+
+= render 'library/stats_2015/our_choise_header'
+= render 'library/stats_2015/fiction'
+
+- if I18n.locale.to_s == "en" || I18n.locale.to_s == "es"
+  = render 'library/stats_2015/non_fiction'
+
+- if I18n.locale.to_s == "ru"
+  = render 'library/stats_2015/documentary'
+
+- if I18n.locale.to_s == "es"
+  = render 'library/stats_2015/local_books'
+
+- if I18n.locale.to_s == "ru" || I18n.locale.to_s == "en" || I18n.locale.to_s == "id"
+  = render 'library/stats_2015/childrens_books'
+
+- if I18n.locale.to_s == "ru" || I18n.locale.to_s == "id"
+  = render 'library/stats_2015/business'
+
+= render 'library/stats_2015/bookshelves'
+= render 'library/stats_2015/covers'
+
+
+= render 'library/stats_2015/footer'

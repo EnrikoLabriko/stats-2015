@@ -1,0 +1,7 @@
+article.stats-2015__section--most-impressed
+  h1.stats-2015__section__header--most-impressed == t('stats_2015.most_impressed.title')
+
+  section.stats-2015__books
+    = render "library/stats_2015/books_list", books: @most_impressed, discovery_id: 'most_impressed'
+
+  .clearfix
